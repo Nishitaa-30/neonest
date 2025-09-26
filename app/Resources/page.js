@@ -8,7 +8,7 @@ import Input from "../components/ui/Input";
 import { BookOpen, ExternalLink, Search, Filter, Clock } from "lucide-react";
 import * as Select from "@radix-ui/react-select";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import { resources as articles } from "../../utils/resources";
+import { resources as articles } from "utils /resources.js";
 
 
 
