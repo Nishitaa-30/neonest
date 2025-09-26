@@ -8,87 +8,10 @@ import Input from "../components/ui/Input";
 import { BookOpen, ExternalLink, Search, Filter, Clock } from "lucide-react";
 import * as Select from "@radix-ui/react-select";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import { resources as articles } from "../../utils/resources";
 
-const articles = [
-  {
-    id: 1,
-    title: "Introducing Solids: A Step-by-Step Guide",
-    description: "Learn when and how to introduce solid foods to your baby, with tips for making the transition smooth",
-    url: "https://example.com/introducing-solids",
-    author: "Dr. Emily Parker",
-    readTime: "8 min read",
-    publishDate: "2024-03-15",
-    category: "feeding",
-    tags: ["weaning", "nutrition", "first foods"],
-    thumbnail: "https://www.motherhoodindia.com/wp-content/uploads/2021/09/Introduction-Of-Solid-Foods-To-Toddlers.jpg",
-    type: "article",
-  },
-  {
-    id: 2,
-    title: "Establishing Healthy Sleep Habits",
-    description: "Practical advice for helping your baby develop good sleep patterns from the start",
-    url: "https://example.com/sleep-habits",
-    author: "Sleep Consultant Team",
-    readTime: "10 min read",
-    publishDate: "2024-02-28",
-    category: "sleep",
-    tags: ["sleep training", "routine", "newborn"],
-    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-otohI9DxJtSlKG460AEhGTSSOaLk0DdOeQ&s",
-    type: "video",
-  },
-  {
-    id: 3,
-    title: "Baby-Proofing Your Home: The Complete Checklist",
-    description: "Essential safety measures to protect your curious crawler and toddler",
-    url: "https://example.com/baby-proofing",
-    author: "Safety First Organization",
-    readTime: "12 min read",
-    publishDate: "2024-01-20",
-    category: "health",
-    tags: ["safety", "childproofing", "home"],
-    thumbnail: "https://images.ctfassets.net/6m9bd13t776q/6audZmURl4JJyTvbtmAM2E/67143a2ebb092cdc3a9b59e85cb10466/baby-proofing-your-home-hero-Stocksy-5081208.png?q=80",
-    type: "video",
-  },
-  {
-    id: 4,
-    title: "Understanding Developmental Milestones",
-    description: "What to expect in your baby's first year of growth and development",
-    url: "https://example.com/developmental-milestones",
-    author: "Dr. Michael Chen",
-    readTime: "15 min read",
-    publishDate: "2023-12-10",
-    category: "development",
-    tags: ["growth", "milestones", "first year"],
-    thumbnail: "https://moonkieshop.com/cdn/shop/articles/istock-1070066292_2667.jpg?v=1705483064&width=1500",
-    type: "audio",
-  },
-  {
-    id: 5,
-    title: "Breastfeeding Tips for New Mothers",
-    description: "Expert advice for overcoming common breastfeeding challenges",
-    url: "https://example.com/breastfeeding-tips",
-    author: "Lactation Consultant Team",
-    readTime: "9 min read",
-    publishDate: "2024-03-01",
-    category: "feeding",
-    tags: ["breastfeeding", "newborn", "latching"],
-    thumbnail: "https://kangaroocareindia.com/static/media/blog-34.66b52c08f84222a06361.jpg",
-    type: "article",
-  },
-  {
-    id: 6,
-    title: "The Importance of Tummy Time",
-    description: "How tummy time helps your baby's development and ways to make it enjoyable",
-    url: "https://example.com/tummy-time",
-    author: "Pediatric Physical Therapists",
-    readTime: "7 min read",
-    publishDate: "2024-02-15",
-    category: "development",
-    tags: ["motor skills", "play", "development"],
-    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxdz5v7_6mOZStFh66GSYg0KMWdbpRfM56bA&s",
-    type: "audio",
-  },
-];
+
+
 
 const categories = [
   { id: "all", name: "All Resources" },
